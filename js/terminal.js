@@ -256,21 +256,21 @@ function execute(command,args){
 			numErrors=0;
 			helpCount=0;
 			if(args==""){
-				printMsg("Type 'ls' to see the contents of the current directory. Directories are blue and files are white. To access directories, type 'cd' followed by the name of the directory. To go back a directory, type 'cd ..'. To open files, type 'cat' followed by the name of the file. You can press tab to complete what you've started to type or see a list of possible completions. You can also use up and down arrows to go through the command history. If you are still confused, type 'confused still'.");
+				printMsg("Type 'ls' to display the contents of the current directory. Directories (folders) appear in blue and files are white. To access directories, type 'cd' followed by the name of the directory. If you would like to return to the previous directory, type 'cd ..'. To open files, type 'cat' followed by the filename. You can press tab to complete what you've started to type or see a list of possible completions. You can also use up and down arrows to go through the command history. If you are still confused, type 'confused still'.");
 			}
 			else if(args=="still"){
-				printMsg("Still confused? No problem. Type 'whois' and press enter to find out who I am. Type 'cat resume.txt' to see my resume. Type 'cat skills.txt' to see my skills. Type 'contact' to see contact information. Type 'cd portfolio' to access my portfolio and type 'cd c' to access my c portfolio, 'cd java' to access my java portfolio, and so on so forth. Once you're in a language directory such as 'c' or 'java', you can type 'cat [insert filename here]' to see the code. Good luck. If you are <i>still</i> confused click <a href='javascript:void(0)' onclick='confusedResume()'>here</a>.");
+				printMsg("Still confused? That's ok! Type 'whois' and press enter to find out who I am. Type 'cat resume.txt' to see my resume. Type 'cat skills.txt' to see my skills. Type 'contact' to see contact information. Type 'cd portfolio' to access my portfolio and type 'ls' to print the contents of the directory. In the portfolio folder, type 'cd python' to access my python portfolio, 'cd java' to access my java portfolio, etc.. Once you're in a language directory such as 'python' or 'java', you can type 'cat [filename]' to see the code. Good luck. If you are <i>still</i> confused click <a href='javascript:void(0)' onclick='confusedResume()'>here</a>.");
 			}
 			break;
 		case "hire":
 			numErrors=0;
 			helpCount=0;
-			printMsg("You are a gentleman(woman) and a scholar and I see you have fantastic taste in employees. Please contact me at <a href='mailto:dki@seas.upenn.edu'>dki@seas.upenn.edu</a> with any job offers. Thank you.");
+			printMsg("You have fantastic taste!. Please contact me at <a href='mailto:kristincorona@gmail.com'>kristincorona@gmail.com</a> with prospective employment opportunities. Thank you.");
 			break;
 		case "shortcut":
 			numErrors=0;
 			helpCount=0;
-			openInNewTab()
+			openInNewTab("http://cv.kristincorona.com")
 			break;
 		default:
 			printMsg(command+": Command not found");
@@ -808,7 +808,7 @@ function printMsg(msg){
 }
 
 function openInNewTab(url) {
-	var win = window.open("http://cv.kristincorona.com", '_blank');
+	var win = window.open(url, '_blank');
 	win.focus();
 }
 
