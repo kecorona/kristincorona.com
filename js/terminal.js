@@ -56,7 +56,7 @@ if (navigator.appName=="Microsoft Internet Explorer"||navigator.userAgent.toLowe
 
 //Init function. Prints welcome message and starts the prompt.
 function startTerminal(){
-	printMsg("Welcome to Kristin Corona's home page.<br/>Copyright (c) 2015 Kristin Corona. All rights reserved.<br/><br/>Type 'help' for a list of available commands. Type 'confused' if you aren't sure how to use this website.");
+	printMsg("Welcome to Kristin Corona's home page.<br/>Copyright (c) 2015 Kristin Corona. All rights reserved.<br/><br/>Type 'help' for a list of available commands. Type 'shortcut' if you want to skip to my resume.");
 	prompt();
 }
 
