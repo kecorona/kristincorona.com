@@ -41,10 +41,10 @@ help[12]=["shortcut","View Kristin's resume page"]
 //Explicitly set values for file system. Used as a faux directory hierarchy. Used for navigating file system and to check what arguments are valid for commands such as cat, cd, etc.
 dirList[0]=["",["portfolio"],["resume.txt","skills.txt"]];
 dirList[1]=["/portfolio",["c","java","python","websites"],[]];
-dirList[2]=["/portfolio/c",[],["kinda-sh.c"]]; 
-dirList[3]=["/portfolio/java",[],["prefixtree.java", "kevinbaconnumber.java"]]; 
-dirList[4]=["/portfolio/python",[],["planetsim.py","sudoku.py"]]; 
-dirList[5]=["/portfolio/websites",[],["PopCloud","Phuket", "PassGen"]]; 
+dirList[2]=["/portfolio/c",[],[""]]; 
+dirList[3]=["/portfolio/java",[],["", ""]]; 
+dirList[4]=["/portfolio/python",[],["",""]]; 
+dirList[5]=["/portfolio/websites",[],["","", ""]]; 
 
 //Set up keypress event handler so that keyboard inputs can be processed.
 document.onkeypress = processStroke;
